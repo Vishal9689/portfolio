@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Qualification - Vishal Bonde</title>
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: white;
     }
 
@@ -17,11 +18,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
       padding: 15px 25px;
       position: sticky;
       top: 0;
       z-index: 1000;
+      backdrop-filter: blur(8px);
     }
 
     .nav-links {
@@ -37,7 +39,7 @@
     }
 
     .nav-links a:hover {
-      color: yellow;
+      color: #38bdf8;
     }
 
     /* Hamburger */
@@ -68,18 +70,36 @@
     }
 
     .card {
-      background: rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.08);
       margin: 20px auto;
       padding: 20px;
       border-radius: 15px;
-      max-width: 600px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
+      max-width: 650px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: 0.3s;
+      backdrop-filter: blur(6px);
     }
 
     .card:hover {
-      transform: scale(1.05);
-      background: rgba(255,255,255,0.2);
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* NEW SKILL BOX */
+    .skills {
+      text-align: left;
+      margin-top: 10px;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .skills div {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      color: #38bdf8;
+      font-weight: bold;
     }
 
     @keyframes fadeIn {
@@ -111,6 +131,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -123,11 +144,11 @@
     </div>
 
     <div class="nav-links" id="navLinks">
-      <a href="home.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="qualification.html">Qualification</a>
       <a href="skill.html">Skill</a>
-      <a href="achivment.html">Achievement</a>
-      <a href="internshio.html">Internship</a>
+      <a href="achivment.html">Projects</a>
+      <a href="internship.html">Experience</a>
       <a href="contact.html">Contact</a>
     </div>
   </nav>
@@ -144,16 +165,16 @@
     <div class="card">
       <h2>Higher Secondary Education (HSC)</h2>
       <p>Nutan Maratha College of Science, Jalgaon (2019-2021)</p>
-      <p><b>Percentage: 78.17% </b></p>
+      <p><b>Percentage: 78.17%</b></p>
     </div>
 
     <div class="card">
       <h2>Secondary Education (SSC)</h2>
-      <p>Mahatma Gandhi Vidyalaya, Jalgaon<br>
-         (2019)</p>
+      <p>Mahatma Gandhi Vidyalaya, Jalgaon<br>(2019)</p>
       <p><b>Percentage: 72.80%</b></p>
     </div>
-  </div>
+
+    
 
   <script>
     function toggleMenu() {
