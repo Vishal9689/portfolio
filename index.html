@@ -151,6 +151,7 @@
       to { width: 100% }
     }
 
+<<<<<<< HEAD
     /* 🔥 GRID SECTION CSS */
     .info-grid {
       display: grid;
@@ -178,6 +179,18 @@
       .info-grid {
         grid-template-columns: 1fr;
       }
+=======
+    .hero-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+>>>>>>> f5a4d23914dbdc86dc730c92deb74ae61a79a2a5
     }
 
     /* Buttons */
@@ -185,7 +198,10 @@
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
+<<<<<<< HEAD
       margin-top: 20px;
+=======
+>>>>>>> f5a4d23914dbdc86dc730c92deb74ae61a79a2a5
     }
 
     .btn {
@@ -220,7 +236,11 @@
       background: #38bdf8;
       color: #0f172a;
       box-shadow: 0 0 20px #38bdf8;
+<<<<<<< HEAD
       transform: scale(1.05);
+=======
+      transform: rotate(-3deg) scale(1.05);
+>>>>>>> f5a4d23914dbdc86dc730c92deb74ae61a79a2a5
     }
 
     /* Hero Image */
@@ -230,19 +250,101 @@
       border-radius: 100%;
       border: 5px solid #38bdf8;
       box-shadow: 0px 0px 30px rgba(56, 189, 248, 0.6);
+<<<<<<< HEAD
     }
 
     /* Responsive */
     @media (max-width: 768px) {
+=======
+      animation: float 3s ease-in-out infinite, rotateGlow 6s linear infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes rotateGlow {
+      from { box-shadow: 0 0 15px #38bdf8; transform: matrix3d(); }
+      to { box-shadow: 0 0 30px #facc15; transform:skew() ; }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+      .hero {
+        padding: 100px 50px 60px;
+      }
+      .hero-text h1 {
+        font-size: 42px;
+      }
+      .hero-text h3 {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 15px 20px;
+      }
+      .hamburger {
+        display: flex;
+      }
+      .nav-links {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        background: rgba(15,23,42,0.95);
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+        display: none;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+>>>>>>> f5a4d23914dbdc86dc730c92deb74ae61a79a2a5
       .hero {
         flex-direction: column-reverse;
         text-align: center;
         padding: 100px 20px 50px;
       }
+<<<<<<< HEAD
+=======
+      .hero-text h1 {
+        font-size: 36px;
+      }
+      .hero-text h3 {
+        font-size: 20px;
+      }
+      .buttons {
+        justify-content: center;
+      }
+      .hero-img img {
+        width: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 28px;
+      }
+      .hero-text h3 {
+        font-size: 18px;
+      }
+      .hero-text p {
+        font-size: 14px;
+      }
+      .hero-img img {
+        width: 150px;
+      }
+>>>>>>> f5a4d23914dbdc86dc730c92deb74ae61a79a2a5
     }
   </style>
 </head>
 <body>
+<<<<<<< HEAD
 
 <header>
   <nav class="navbar">
@@ -300,3 +402,56 @@ hamburger.addEventListener('click', () => {
 
 </body>
 </html>
+=======
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vishal Bonde</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="qualification.html">Qualification</a></li>
+        <li><a href="skill.html">Skill</a></li>
+        <li><a href="achivment.html">Achievement</a></li>
+        <li><a href="internshio.html">Internship</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h4>Hello, I'm</h4>
+        <h1><span>Vishal Bonde</span></h1>
+        <h3></h3>
+        <p>
+          Passionate about creating efficient and scalable applications. Skilled in Java, SQL, HTML, CSS, and Manual Testing. Always eager to learn new technologies and contribute to innovative projects.
+        </p>
+        <div class="buttons">
+         <a href="hire.html"> <button class="btn hire" href="hir">Skills</button></a>
+          <a href="assent/Vishal Bonde2.pdf"><button class="btn cv">Download CV</button></a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="assent/WhatsApp Image 2025-05-04 at 2.23.05 PM (1).jpeg" alt="Vishal's Profile">
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+>>>>>>> f5a4d23914dbdc86dc730c92deb74ae61a79a2a5
